@@ -1149,18 +1149,18 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#" class="social-link">📘</a>
-            <a href="#" class="social-link">📷</a>
-            <a href="#" class="social-link">🐦</a>
-            <a href="#" class="social-link">💼</a>
-            <a href="#" class="social-link">🎵</a>
-        </div>
-        <p>&copy; 2024 Team Stecu Photography. All rights reserved.</p>
-        <p>Designed with ❤️ for capturing life's beautiful moments</p>
-    </footer>
+   <!-- Footer -->
+<footer class="footer">
+    <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span> Team Stecu Photography. All rights reserved.</p>
+    <p>Designed with ❤️ for capturing life's beautiful moments</p>
+</footer>
 
     <!-- Modal for Image Preview -->
     <div class="modal" id="imageModal">
@@ -1171,6 +1171,9 @@
     </div>
 
     <script>
+        // Script untuk tahun otomatis
+        document.getElementById("year").textContent = new Date().getFullYear();
+        
         // Loading Animation
         window.addEventListener('load', function() {
             const loader = document.getElementById('loading');
@@ -1773,4 +1776,5 @@
         console.log('🎹 Keyboard shortcuts available (Press F1 for help)');
     </script>
 </body>
+
 </html>
